@@ -13,33 +13,31 @@ public class FibonacciSearchTest {
         fib = new FibonacciSearch();
     }
 
-//    @Test
-//    public void canGetAngle(){
-//        assertEquals(45.0, fib.getAngle(), .1);
-//    }
-
     @Test
     public void canGetSinOfAngle(){
         assertEquals(0.707, fib.getSin(45), .01);
     }
 
-    @Test
-    public void canGetMaximumSinOfAngle(){
-        assertEquals(1, fib.getSin(90), .01);
-    }
+//    @Test
+//    public void canGetMaximumSinOfAngle(){
+//        assertEquals(1, fib.getSin(90), .01);
+//    }
+
+//    @Test
+//    public void canPrintOutValuesOfSin(){
+//        fib.listValuesOfSin();
+//    }
 
     @Test
-    public void canPrintOutValuesOfSin(){
-        fib.listValuesOfSin();
+    public void canGetFibMinusOne(){
+        assertEquals(13, fib.fibMinusOne(8));
     }
+
 
     @Test
-    public void canGetfibMinusOne(){
-        assertEquals(8, fib.fibMinusOne(13));
+    public void canFindMaximumByFibonacciSearch(){
+        fib.findMaximumByFibonacciSearch2(21);
     }
-
-
-
 
 
 
